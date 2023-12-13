@@ -20,20 +20,42 @@
                 </h2>
                 <div class="flex flex-col gap-4 text-start">
                     <p>Have a project in mind? Contact us below:</p>
-                    <form class="flex flex-col gap-4">
+                    <form
+                        action="https://submit-form.com/bWI70Csdu"
+                        class="flex flex-col gap-4"
+                    >
                         <div class="flex flex-col gap-2">
                             <label for="name" class="text-sm">Name:</label>
                             <input
+                                id="name"
+                                name="name"
                                 type="text"
                                 placeholder="Your name"
                                 class="px-2 py-2 text-slate-900 rounded"
+                                required
                             />
                         </div>
                         <div class="flex flex-col gap-2">
-                            <label for="name" class="text-sm">Message:</label>
+                            <label for="email" class="text-sm">Email:</label>
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="Your email"
+                                class="px-2 py-2 text-slate-900 rounded"
+                                required
+                            />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="message" class="text-sm"
+                                >Message:</label
+                            >
                             <textarea
+                                id="message"
+                                name="message"
                                 placeholder="Your message"
                                 class="px-2 py-2 text-slate-900 rounded"
+                                required
                             ></textarea>
                         </div>
                         <button
