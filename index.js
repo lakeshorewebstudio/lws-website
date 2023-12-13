@@ -4,8 +4,8 @@ const params = {
     port: 3000,
     host: '0.0.0.0',
     open: true,
-    ignore: 'node_modules,dist',
-    file: 'index.html',
+    ignore: 'node_modules',
+    file: 'dist/index.html',
     wait: 1000,
     logLevel: 2,
 };
