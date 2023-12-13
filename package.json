@@ -4,7 +4,7 @@
     "description": "The website of Lakeshore Web Studio, LLC.",
     "main": "index.js",
     "scripts": {
-        "build": "echo TODO",
+        "build": "npm i && npx tailwindcss -i ./style.css -o ./dist/output.css",
         "start": "concurrently \"npm:watch:html\" \"npm:watch:tailwind\"",
         "watch:html": "node .",
         "watch:tailwind": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch"
