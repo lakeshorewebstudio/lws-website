@@ -5,7 +5,7 @@ const params = {
     host: '0.0.0.0',
     open: true,
     ignore: 'node_modules',
-    file: 'dist/index.html',
+    file: 'src/index.html',
     wait: 1000,
     logLevel: 2,
 };

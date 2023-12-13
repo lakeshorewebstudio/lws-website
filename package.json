@@ -4,10 +4,12 @@
     "description": "The website of Lakeshore Web Studio, LLC.",
     "main": "index.js",
     "scripts": {
-        "build": "npm i && npx tailwindcss -i ./style.css -o ./dist/output.css",
+        "build": "npm run clean && npm i && npm run build:tailwind && cp src/index.html dist/index.html",
+        "build:tailwind": "npx tailwindcss -i ./src/style.css -o ./dist/output.css",
+        "clean": "rm -rf dist",
         "start": "concurrently \"npm:watch:html\" \"npm:watch:tailwind\"",
         "watch:html": "node .",
-        "watch:tailwind": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch"
+        "watch:tailwind": "npx tailwindcss -i ./src/style.css -o ./src/output.css --watch"
     },
     "author": "Lakeshore Web Studio, LLC",
     "license": "ISC",
